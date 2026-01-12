@@ -134,4 +134,4 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for development setup and guidelines.
 
 ## 📄 License
 
-MIT © [Your Name](https://github.com/your-username)
+MIT © [Abhishek Panda](https://github.com/abhishekpanda0620)

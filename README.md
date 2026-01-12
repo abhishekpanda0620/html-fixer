@@ -1,8 +1,10 @@
 # html-entity-fixer
 
 [![npm version](https://img.shields.io/npm/v/html-entity-fixer.svg)](https://www.npmjs.com/package/html-entity-fixer)
+[![npm downloads](https://img.shields.io/npm/dm/html-entity-fixer.svg)](https://www.npmjs.com/package/html-entity-fixer)
 [![CI](https://github.com/abhishekpanda0620/html-entity-fixer/actions/workflows/ci.yml/badge.svg)](https://github.com/abhishekpanda0620/html-entity-fixer/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Built with GitHub Actions](https://img.shields.io/badge/Built%20with-GitHub%20Actions-2088FF?logo=github-actions&logoColor=white)](https://github.com/abhishekpanda0620/html-entity-fixer/actions)
 
 > 🔧 Fast, safe CLI tool for escaping unescaped HTML entities in modern web projects
 

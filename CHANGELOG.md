@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/abhishekpanda0620/html-entity-fixer/compare/v1.1.0...v1.1.1) (2026-01-12)
+
+
+### Bug Fixes
+
+* implement strict tag validation to prevent incorrect escaping ([e034b59](https://github.com/abhishekpanda0620/html-entity-fixer/commit/e034b5952b98859207a891ae132ebf6a046762bb))
+
 # [1.1.0](https://github.com/abhishekpanda0620/html-entity-fixer/compare/v1.0.0...v1.1.0) (2026-01-12)
 
 

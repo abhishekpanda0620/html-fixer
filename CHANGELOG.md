@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/abhishekpanda0620/html-fixer/compare/v1.0.0...v1.1.0) (2026-01-12)
+
+
+### Features
+
+* rename package to html-entity-fixer ([eb3bf51](https://github.com/abhishekpanda0620/html-fixer/commit/eb3bf51aeec2a9b94de14bbf63c9d45fa2107ae9))
+
 # 1.0.0 (2026-01-12)
 
 

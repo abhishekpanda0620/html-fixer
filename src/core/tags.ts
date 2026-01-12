@@ -1,0 +1,62 @@
+/**
+ * Set of valid HTML tags for strict validation.
+ * Includes standard HTML5 tags and void tags.
+ */
+export const VALID_HTML_TAGS = new Set([
+  'a', 'abbr', 'address', 'area', 'article', 'aside', 'audio', 'b', 'base', 'bdi',
+  'bdo', 'blockquote', 'body', 'br', 'button', 'canvas', 'caption', 'cite', 'code',
+  'col', 'colgroup', 'data', 'datalist', 'dd', 'del', 'details', 'dfn', 'dialog',
+  'div', 'dl', 'dt', 'em', 'embed', 'fieldset', 'figcaption', 'figure', 'footer',
+  'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hgroup', 'hr',
+  'html', 'i', 'iframe', 'img', 'input', 'ins', 'kbd', 'label', 'legend', 'li',
+  'link', 'main', 'map', 'mark', 'math', 'menu', 'meta', 'meter', 'nav', 'noscript',
+  'object', 'ol', 'optgroup', 'option', 'output', 'p', 'picture', 'portal', 'pre',
+  'progress', 'q', 'rp', 'rt', 'ruby', 's', 'samp', 'script', 'search', 'section',
+  'select', 'slot', 'small', 'source', 'span', 'strong', 'style', 'sub', 'summary',
+  'sup', 'svg', 'table', 'tbody', 'td', 'template', 'textarea', 'tfoot', 'th',
+  'thead', 'time', 'title', 'tr', 'track', 'u', 'ul', 'var', 'video', 'wbr',
+  
+  // SVG Tags
+  'a', 'animate', 'animateMotion', 'animateTransform', 'circle', 'clipPath',
+  'defs', 'desc', 'ellipse', 'feBlend', 'feColorMatrix', 'feComponentTransfer',
+  'feComposite', 'feConvolveMatrix', 'feDiffuseLighting', 'feDisplacementMap',
+  'feDistantLight', 'feDropShadow', 'feFlood', 'feFuncA', 'feFuncB', 'feFuncG',
+  'feFuncR', 'feGaussianBlur', 'feImage', 'feMerge', 'feMergeNode', 'feMorphology',
+  'feOffset', 'fePointLight', 'feSpecularLighting', 'feSpotLight', 'feTile',
+  'feTurbulence', 'filter', 'foreignObject', 'g', 'image', 'line', 'linearGradient',
+  'marker', 'mask', 'metadata', 'mpath', 'path', 'pattern', 'polygon', 'polyline',
+  'radialGradient', 'rect', 'set', 'stop', 'switch', 'symbol', 'text', 'textPath',
+  'tspan', 'use', 'view',
+
+  // MathML Tags
+  'annotation', 'annotation-xml', 'maction', 'math', 'merror', 'mfrac', 'mi',
+  'mmultiscripts', 'mn', 'mo', 'mover', 'mpadded', 'mphantom', 'mprescripts',
+  'mroot', 'mrow', 'ms', 'mspace', 'msqrt', 'mstyle', 'msub', 'msubsup', 'msup',
+  'mtable', 'mtd', 'mtext', 'mtr', 'munder', 'munderover', 'none', 'semantics'
+]);
+
+/**
+ * Checks if a tag name is a valid HTML tag, a standard custom element (contains hyphen),
+ * or a potential React component (starts with uppercase).
+ */
+export function isValidTag(tagName: string): boolean {
+  if (!tagName) return false;
+  
+  // Standard HTML tags (case-insensitive in HTML, but usually lowercase)
+  const lowerName = tagName.toLowerCase();
+  if (VALID_HTML_TAGS.has(lowerName)) {
+    return true;
+  }
+
+  // Custom elements (must contain a hyphen)
+  if (tagName.includes('-')) {
+    return true;
+  }
+
+  // React/PascalCase components (starts with uppercase letter)
+  if (/^[A-Z]/.test(tagName)) {
+    return true;
+  }
+
+  return false;
+}

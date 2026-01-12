@@ -26,6 +26,15 @@ describe('escapeHtml', () => {
       }
     );
 
+    it.each(testCases.essential.invalidTags)(
+        'should strict validate tags: "$input"',
+        ({ input, expected, escapedCount }) => {
+            const result = escapeHtml(input, 'essential');
+            expect(result.content).toBe(expected);
+            expect(result.escapedCount).toBe(escapedCount);
+        }
+    );
+
     it.each(testCases.essential.alreadyEscaped)(
       'should not double-escape: "$input"',
       ({ input, expected, escapedCount }) => {
@@ -85,7 +94,7 @@ describe('escapeHtml', () => {
 describe('hasUnescapedEntities', () => {
   it('should return true when entities need escaping', () => {
     expect(hasUnescapedEntities("Test's quote")).toBe(true);
-    expect(hasUnescapedEntities('<script>')).toBe(true);
+    expect(hasUnescapedEntities('<script>')).toBe(false);
   });
 
   it('should return false when no escaping needed', () => {

@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/abhishekpanda0620/html-entity-fixer/compare/v1.1.1...v1.2.0) (2026-01-13)
+
+
+### Features
+
+* add comprehensive extended entities (math, currency, typography) ([5121a59](https://github.com/abhishekpanda0620/html-entity-fixer/commit/5121a596c42109310cbc7ae061063cdb745e796c))
+
 ## [1.1.1](https://github.com/abhishekpanda0620/html-entity-fixer/compare/v1.1.0...v1.1.1) (2026-01-12)
 
 

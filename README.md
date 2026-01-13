@@ -1,6 +1,7 @@
 # html-entity-fixer
 
 [![npm version](https://img.shields.io/npm/v/html-entity-fixer.svg)](https://www.npmjs.com/package/html-entity-fixer)
+[![Website](https://img.shields.io/badge/Website-html--entity--fixer-blue?style=flat&logo=github)](https://abhishekpanda0620.github.io/html-entity-fixer/)
 [![npm downloads](https://img.shields.io/npm/dm/html-entity-fixer.svg)](https://www.npmjs.com/package/html-entity-fixer)
 [![CI](https://github.com/abhishekpanda0620/html-entity-fixer/actions/workflows/ci.yml/badge.svg)](https://github.com/abhishekpanda0620/html-entity-fixer/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

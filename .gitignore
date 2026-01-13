@@ -26,5 +26,5 @@ npm-debug.log*
 .env.local
 
 # Docs (local documentation drafts)
-docs/
 samples/
+html-fixer-roadmap.md
